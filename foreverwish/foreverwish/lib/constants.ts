@@ -1,0 +1,170 @@
+import { Theme, WishCategory, PricingPlan, AIWishStyle } from '@/types';
+
+export const THEMES: Theme[] = [
+  {
+    id: 'rose-garden',
+    name: 'Rose Garden',
+    gradient: 'from-rose-400 via-pink-300 to-red-300',
+    primaryColor: '#f43f5e',
+    accentColor: '#fda4af',
+    textColor: '#fff',
+    emoji: '🌹',
+    isPremium: false,
+  },
+  {
+    id: 'lavender-mist',
+    name: 'Lavender Mist',
+    gradient: 'from-violet-400 via-purple-300 to-fuchsia-300',
+    primaryColor: '#8b5cf6',
+    accentColor: '#c4b5fd',
+    textColor: '#fff',
+    emoji: '💜',
+    isPremium: false,
+  },
+  {
+    id: 'golden-hour',
+    name: 'Golden Hour',
+    gradient: 'from-amber-400 via-orange-300 to-yellow-300',
+    primaryColor: '#f59e0b',
+    accentColor: '#fcd34d',
+    textColor: '#fff',
+    emoji: '✨',
+    isPremium: false,
+  },
+  {
+    id: 'midnight-magic',
+    name: 'Midnight Magic',
+    gradient: 'from-slate-900 via-purple-900 to-slate-800',
+    primaryColor: '#7c3aed',
+    accentColor: '#a78bfa',
+    textColor: '#fff',
+    emoji: '🌙',
+    isPremium: false,
+  },
+  {
+    id: 'ocean-dream',
+    name: 'Ocean Dream',
+    gradient: 'from-cyan-400 via-blue-400 to-teal-400',
+    primaryColor: '#0891b2',
+    accentColor: '#67e8f9',
+    textColor: '#fff',
+    emoji: '🌊',
+    isPremium: true,
+  },
+  {
+    id: 'cherry-blossom',
+    name: 'Cherry Blossom',
+    gradient: 'from-pink-300 via-rose-200 to-pink-100',
+    primaryColor: '#ec4899',
+    accentColor: '#f9a8d4',
+    textColor: '#4a1942',
+    emoji: '🌸',
+    isPremium: true,
+  },
+  {
+    id: 'starry-night',
+    name: 'Starry Night',
+    gradient: 'from-indigo-900 via-blue-900 to-violet-900',
+    primaryColor: '#4f46e5',
+    accentColor: '#818cf8',
+    textColor: '#fff',
+    emoji: '⭐',
+    isPremium: true,
+  },
+  {
+    id: 'tropical-paradise',
+    name: 'Tropical Paradise',
+    gradient: 'from-emerald-400 via-teal-300 to-cyan-300',
+    primaryColor: '#10b981',
+    accentColor: '#6ee7b7',
+    textColor: '#fff',
+    emoji: '🌴',
+    isPremium: true,
+  },
+];
+
+export const CATEGORIES: { id: WishCategory; label: string; emoji: string; desc: string }[] = [
+  { id: 'birthday', label: 'Birthday', emoji: '🎂', desc: 'Make their birthday unforgettable' },
+  { id: 'anniversary', label: 'Anniversary', emoji: '💍', desc: 'Celebrate your love story' },
+  { id: 'best-friend', label: 'Best Friend', emoji: '👯', desc: 'Honor your best friend' },
+  { id: 'couple', label: 'Couple', emoji: '❤️', desc: 'A surprise for your special one' },
+  { id: 'farewell', label: 'Farewell', emoji: '✈️', desc: 'A beautiful goodbye' },
+  { id: 'friendship', label: 'Friendship', emoji: '🤝', desc: 'Celebrate your friendship' },
+  { id: 'proposal', label: 'Proposal', emoji: '💍', desc: 'Pop the question beautifully' },
+  { id: 'memory-collection', label: 'Memories', emoji: '📸', desc: 'A collection of shared memories' },
+];
+
+export const AI_WISH_STYLES: AIWishStyle[] = [
+  { id: 'romantic', name: 'Romantic', emoji: '💕', description: 'Deeply emotional and loving' },
+  { id: 'funny', name: 'Funny', emoji: '😂', description: 'Hilarious and light-hearted' },
+  { id: 'emotional', name: 'Emotional', emoji: '🥺', description: 'Heartfelt and touching' },
+  { id: 'cute', name: 'Cute', emoji: '🥰', description: 'Adorable and sweet' },
+  { id: 'best-friend', name: 'Best Friend', emoji: '👯‍♀️', description: 'Friendly and nostalgic' },
+  { id: 'sibling', name: 'Sibling', emoji: '🫂', description: 'Sibling love and memories' },
+  { id: 'formal', name: 'Formal', emoji: '🎩', description: 'Professional and dignified' },
+  { id: 'heart-touching', name: 'Heart-Touching', emoji: '💗', description: 'Deeply sentimental' },
+];
+
+export const PRICING_PLANS: PricingPlan[] = [
+  {
+    id: 'free',
+    name: 'Free',
+    price: 0,
+    yearlyPrice: 0,
+    isPremium: false,
+    features: [
+      '3 wish pages',
+      '5 photos per page',
+      '2 free themes',
+      'Basic animations',
+      'ForeverWish watermark',
+      'Standard sharing',
+    ],
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    price: 299,
+    yearlyPrice: 2499,
+    isPremium: true,
+    isPopular: true,
+    features: [
+      'Unlimited wish pages',
+      'Unlimited photos & videos',
+      'All 8 premium themes',
+      'Advanced animations',
+      'No watermark',
+      'Custom URL slug',
+      'Password protection',
+      'Voice messages',
+      'Background music',
+      'AI wish generator',
+      'HD media quality',
+      'Priority support',
+    ],
+  },
+];
+
+export const FONTS = [
+  { id: 'playfair', name: 'Playfair Display', preview: 'A wish from the heart' },
+  { id: 'dancing', name: 'Dancing Script', preview: 'A wish from the heart' },
+  { id: 'lato', name: 'Lato', preview: 'A wish from the heart' },
+  { id: 'merriweather', name: 'Merriweather', preview: 'A wish from the heart' },
+  { id: 'pacifico', name: 'Pacifico', preview: 'A wish from the heart' },
+  { id: 'quicksand', name: 'Quicksand', preview: 'A wish from the heart' },
+];
+
+export const DEMO_WISH: Partial<import('@/types').WishProject> = {
+  recipientName: 'Priya',
+  senderName: 'Arjun',
+  message:
+    'Happy Birthday, my love! Every moment with you is a treasure I hold close to my heart. You make every day brighter just by being you. 🎂✨',
+  theme: 'rose-garden',
+  category: 'birthday',
+  photos: [],
+  timeline: [
+    { id: '1', date: '2020-06-15', title: 'When we first met', description: 'That magical evening at the coffee shop', emoji: '☕' },
+    { id: '2', date: '2021-02-14', title: 'Our first Valentine', description: 'Roses and candlelight dinner', emoji: '🌹' },
+    { id: '3', date: '2023-01-01', title: 'New Year Magic', description: 'Counting down together under the stars', emoji: '🎆' },
+  ],
+};
